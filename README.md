@@ -5,6 +5,8 @@ This repository provides an overview of commonly used Spring Boot annotations al
 
 ## Table of Contents
 - [Spring Boot Annotations](#spring-boot-annotations)
+- [Spring Security Annotations](#spring-security-annotations)
+- [Spring Data JPA Annotations](#spring-data-jpa-annotations)
 - [Inversion of Control (IoC)](#inversion-of-control-ioc)
 - [Dependency Injection (DI)](#dependency-injection-di)
 - [ApplicationContext](#applicationcontext)
@@ -29,6 +31,39 @@ Spring Boot provides several annotations to simplify the development process. Be
 | `@Configuration` | Indicates that a class contains Spring configuration. |
 | `@EnableAutoConfiguration` | Enables Spring Boot's auto-configuration mechanism. |
 | `@Transactional` | Marks a method or class as transactional. |
+
+---
+
+## Spring Security Annotations
+Spring Security provides several annotations to handle authentication and authorization.
+
+| Annotation | Description |
+|------------|------------|
+| `@EnableWebSecurity` | Enables Spring Security's web security support. |
+| `@EnableGlobalMethodSecurity` | Enables method-level security. Deprecated in newer versions, replaced by `@EnableMethodSecurity`. |
+| `@EnableMethodSecurity` | Enables method-level security in Spring Security 6+. |
+| `@PreAuthorize` | Defines access control before method execution. |
+| `@PostAuthorize` | Defines access control after method execution. |
+| `@Secured` | Specifies security constraints at the method level. |
+| `@RolesAllowed` | Similar to `@Secured`, defines role-based access control. |
+| `@AuthenticationPrincipal` | Injects the currently authenticated user into a controller method. |
+
+---
+
+## Spring Data JPA Annotations
+Spring Data JPA simplifies database interactions through annotations.
+
+| Annotation | Description |
+|------------|------------|
+| `@Entity` | Marks a class as a JPA entity. |
+| `@Table(name = "table_name")` | Specifies the table name for an entity. |
+| `@Id` | Marks a field as the primary key. |
+| `@GeneratedValue(strategy = GenerationType.IDENTITY)` | Auto-generates primary key values. |
+| `@Column(name = "column_name")` | Maps a field to a specific database column. |
+| `@OneToOne`, `@OneToMany`, `@ManyToOne`, `@ManyToMany` | Defines relationships between entities. |
+| `@JoinColumn(name = "column_name")` | Specifies the foreign key column for relationships. |
+| `@Repository` | Marks a class as a repository to handle data persistence. |
+| `@Transactional` | Ensures database operations are executed within a transaction. |
 
 ---
 
