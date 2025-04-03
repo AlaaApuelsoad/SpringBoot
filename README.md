@@ -146,14 +146,5 @@ public class MainApplication {
 - [Spring Boot Official Guide](https://spring.io/projects/spring-boot)
 - [Baeldung: Spring Annotations](https://www.baeldung.com/spring-annotations)
 
----
 
-## Contributing
-Feel free to open issues or submit pull requests if you find any errors or have suggestions for improvement.
-
-
----
-
-### Author
-[Alaa Eldin Apuelsoad](https://github.com/alaaeldin-apuelsoad)
 
